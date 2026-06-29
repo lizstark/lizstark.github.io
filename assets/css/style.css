@@ -1,0 +1,619 @@
+/* =========================================================
+   Liz Stark — Academic Website
+   ========================================================= */
+
+/* --- Variables ------------------------------------------ */
+:root {
+  --color-bg: #fdfaf6;
+  --color-surface: #f5efe9;
+  --color-text: #2d2420;
+  --color-text-muted: #7a6a65;
+  --color-accent: #8b3a4a;
+  --color-accent-hover: #6b2a3a;
+  --color-border: #e5ddd6;
+  --nav-height: 3.5rem;
+  --sidebar-width: 220px;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* --- Reset & Base --------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  color-scheme: light only;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font);
+  line-height: 1.65;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Force light mode */
+@media (prefers-color-scheme: dark) {
+  html { color-scheme: light only; }
+  body { background: var(--color-bg); color: var(--color-text); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+/* --- Accessibility -------------------------------------- */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  position: fixed;
+  left: 0.75rem;
+  top: 0.75rem;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1rem;
+  background: var(--color-accent);
+  color: #fff;
+  z-index: 9999;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+/* --- Navigation ----------------------------------------- */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+  height: var(--nav-height);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  height: 100%;
+}
+
+.nav-brand {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-text);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+}
+
+.nav-brand:visited {
+  color: var(--color-text);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.75rem;
+}
+
+.nav-links a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+}
+
+.nav-links a:hover {
+  color: var(--color-accent);
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px 4px;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--color-text);
+  border-radius: 2px;
+}
+
+/* --- Page Layout ---------------------------------------- */
+.page-wrapper {
+  display: flex;
+  gap: 4.5rem;
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 3.5rem 1.5rem 5rem;
+  align-items: flex-start;
+}
+
+/* --- Sidebar -------------------------------------------- */
+.sidebar {
+  width: var(--sidebar-width);
+  flex-shrink: 0;
+  position: sticky;
+  top: calc(var(--nav-height) + 2rem);
+  align-self: flex-start;
+}
+
+.sidebar-photo {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 0 0 5px var(--color-bg);
+}
+
+.sidebar-name {
+  font-size: 1.55rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.3rem;
+  color: var(--color-text);
+}
+
+.sidebar-role {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.15rem;
+}
+
+.sidebar-dept {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  line-height: 1.45;
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin-bottom: 1.25rem;
+}
+
+.sidebar-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.875rem;
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.sidebar-links a:hover {
+  color: var(--color-accent-hover);
+  text-decoration: underline;
+}
+
+.sidebar-links a:visited {
+  color: var(--color-accent);
+}
+
+.sidebar-links svg {
+  flex-shrink: 0;
+  opacity: 0.85;
+}
+
+.cv-button {
+  display: inline-block;
+  width: fit-content;
+  padding: 0.38rem 1rem;
+  background: transparent;
+  color: var(--color-accent);
+  border: 1.5px solid var(--color-accent);
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.cv-button:hover {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.paper-venue a {
+  color: var(--color-text-muted);
+  text-decoration: underline;
+  text-decoration-color: var(--color-border);
+}
+
+.paper-venue a:hover {
+  color: var(--color-accent);
+  text-decoration-color: var(--color-accent);
+}
+
+/* --- Main Content --------------------------------------- */
+.main-content {
+  flex: 1;
+  min-width: 0;
+  max-width: 640px;
+}
+
+/* --- Sections ------------------------------------------- */
+.section {
+  margin-bottom: 3.5rem;
+  scroll-margin-top: calc(var(--nav-height) + 1.5rem);
+}
+
+.section > h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+/* --- Bio ------------------------------------------------ */
+.bio p {
+  font-size: 0.95rem;
+  margin-bottom: 0.85rem;
+  color: var(--color-text);
+}
+
+.bio p:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Papers --------------------------------------------- */
+.papers-group {
+  margin-bottom: 2rem;
+}
+
+.papers-group h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  margin-bottom: 0.9rem;
+}
+
+.paper {
+  margin-bottom: 1rem;
+  font-size: 0.925rem;
+  line-height: 1.55;
+}
+
+.paper-authors {
+  color: var(--color-text);
+}
+
+.paper-title {
+  color: var(--color-text);
+}
+
+.paper-title a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.paper-title a:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.paper-venue {
+  color: var(--color-text-muted);
+}
+
+.paper-coverage {
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+  margin-top: 0.2rem;
+}
+
+.paper-note {
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+  margin-top: 0.2rem;
+}
+
+/* --- Teaching ------------------------------------------- */
+.teaching-intro {
+  font-size: 0.95rem;
+  margin-bottom: 1.75rem;
+}
+
+.teaching-group {
+  margin-bottom: 1.75rem;
+}
+
+.teaching-group h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.teaching-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.45rem;
+  font-size: 0.925rem;
+}
+
+.teaching-course {
+  color: var(--color-text);
+}
+
+.teaching-instructor {
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+.teaching-term {
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.teaching-lecture {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.65rem;
+  font-size: 0.925rem;
+}
+
+.teaching-lecture-left {
+  min-width: 0;
+}
+
+.teaching-lecture-title {
+  color: var(--color-text);
+}
+
+.teaching-lecture-meta {
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+.teaching-cert {
+  font-size: 0.925rem;
+  color: var(--color-text-muted);
+}
+
+/* --- Awards --------------------------------------------- */
+.award-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.65rem;
+  font-size: 0.925rem;
+}
+
+.award-left {
+  min-width: 0;
+  flex: 1;
+}
+
+.award-name {
+  color: var(--color-text);
+}
+
+.award-note {
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+  font-style: italic;
+  margin-top: 0.15rem;
+}
+
+.award-year {
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* --- Hero banner ---------------------------------------- */
+.hero-banner {
+  width: 100%;
+  line-height: 0;
+}
+
+.hero-banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* --- CV ------------------------------------------------- */
+.cv-text {
+  font-size: 0.95rem;
+  color: var(--color-text);
+}
+
+/* --- Contact -------------------------------------------- */
+.contact-email {
+  font-size: 0.95rem;
+}
+
+.contact-email a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.contact-email a:hover {
+  color: var(--color-accent-hover);
+  text-decoration: underline;
+}
+
+.photo-caption {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  margin-top: 3rem;
+}
+
+/* --- Single / List pages -------------------------------- */
+.single-wrapper {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 5rem;
+}
+
+.single-wrapper h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.single-content {
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+/* --- Footer --------------------------------------------- */
+.footer {
+  border-top: 1px solid var(--color-border);
+  padding: 1rem 1.5rem;
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+}
+
+.footer a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: var(--color-accent);
+}
+
+/* --- Global links --------------------------------------- */
+a {
+  color: var(--color-accent);
+}
+
+a:visited {
+  color: var(--color-accent);
+}
+
+/* --- Mobile -------------------------------------------- */
+@media (max-width: 760px) {
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: var(--nav-height);
+    left: 0;
+    right: 0;
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+    flex-direction: column;
+    gap: 0;
+    padding: 0.5rem 0;
+  }
+
+  .nav-links.is-open {
+    display: flex;
+  }
+
+  .nav-links li a {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .page-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1.25rem 3.5rem;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sidebar-links {
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem 1.25rem;
+  }
+
+  .sidebar-photo {
+    width: 140px;
+    height: 140px;
+  }
+
+  .main-content {
+    max-width: 100%;
+  }
+
+  .teaching-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .teaching-lecture {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .award-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.1rem;
+    margin-bottom: 0.85rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer {
+    flex-direction: column;
+    gap: 0.25rem;
+    text-align: center;
+  }
+}

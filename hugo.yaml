@@ -1,0 +1,39 @@
+baseURL: "https://lizstark.github.io/"
+title: "Liz Stark"
+languageCode: en-us
+
+params:
+  description: "Ph.D. Candidate, Department of Political Science, University of Pennsylvania"
+  author: "Liz Stark"
+  email: "lizstark@sas.upenn.edu"
+  department: "Department of Political Science"
+  university: "University of Pennsylvania"
+  photo: "/images/photo.jpg"
+  googleScholar: "https://scholar.google.com/citations?user=Pgdd1SsAAAAJ&hl=en"
+  orcid: "https://orcid.org/0009-0004-2306-4960"
+  linkedin: "https://www.linkedin.com/in/starktalk"
+  twitter: "https://x.com/stark_talk"
+  cv: "/files/cv.pdf"
+
+menu:
+  main:
+    - name: About
+      url: "/#about"
+      weight: 5
+    - name: Research
+      url: "/#research"
+      weight: 10
+    - name: Teaching
+      url: "/#teaching"
+      weight: 20
+    - name: CV
+      url: "/files/cv.pdf"
+      weight: 30
+    - name: Contact
+      url: "/#contact"
+      weight: 40
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

@@ -1,0 +1,37 @@
+articles:
+  - title: "Reducing Lost Votes by Mail: Evidence on Vote Curing from Pennsylvania"
+    authors: "Morse, Michael, Marc Meredith, and Liz Stark"
+    year: 2027
+    status: "forthcoming"
+    venue: "Journal of Empirical Legal Studies"
+    venue_url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6544563"
+    coverage:
+      - outlet: "Votebeat"
+        url: "https://www.votebeat.org/pennsylvania/2026/06/03/mail-ballot-notice-cure-study-university-pennsylvania-study-2024-election/"
+      - outlet: "Election Law Blog"
+        url: "https://electionlawblog.org/?p=155397"
+
+  - title: "Democracy on the Front Pages: Evaluating Local Media Coverage of Election Officials"
+    authors: "Stark, Liz"
+    year: 2025
+    status: "published"
+    venue: "Election Law Journal: Rules, Politics, and Policy"
+    venue_url: "https://doi.org/10.1177/15331296251368831"  
+
+working_papers:
+  - title: "'Running' Tally: The Politicization of Election Administration in Party Platforms"
+    authors: "Stark, Liz"
+
+  - title: "Democracy in the Lede: Introducing the Election Administration Media Dashboard"
+    authors: "Stark, Liz"
+
+  - title: "On the Front Lines (and Front Pages) of Democracy: Evaluating Media Coverage of Election Officials"
+    authors: "Stark, Liz"
+
+public_writing:
+  - title: "What the Exodus of Election Officials Means for Democratic Erosion"
+    authors: "Stark, Liz"
+    venue: "Democratic Erosion Consortium"
+    venue_url: "https://www.democratic-erosion.com/2023/10/22/what-the-exodus-of-election-officials-means-for-democratic-erosion/"
+    year: 2023
+    note: "Published as part of a cross-university collaboration researching threats to democracy."

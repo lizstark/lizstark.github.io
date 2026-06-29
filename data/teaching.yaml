@@ -1,0 +1,32 @@
+ta:
+  - course: "Race and Ethnic Politics"
+    instructor: "Dr. Daniel Gillion"
+    term: "Spring 2025"
+  - course: "The Changing American Electorate"
+    instructor: "Dr. Daniel Hopkins"
+    term: "Fall 2024"
+  - course: "Public Policy Process"
+    instructor: "Dr. Parrish Bergquist"
+    term: "Spring 2024"
+  - course: "Introduction to American Politics"
+    instructor: "Dr. Marc Meredith"
+    term: "Fall 2023"
+
+lectures:
+  - title: "Measuring Election Performance and Confidence in Election Results"
+    course: "Democracy at Work"
+    instructor: "PA Secretary of the Commonwealth Al Schmidt"
+    term: "Spring 2026"
+  - title: "Race and Ethnicity in Election Administration"
+    course: "Race and Ethnic Politics"
+    instructor: "Dr. Daniel Gillion"
+    term: "Spring 2025"
+  - title: "Administrative Burden and Elections"
+    course: "Public Policy Process"
+    instructor: "Dr. Parrish Bergquist"
+    term: "Spring 2025"
+
+certificate:
+  name: "Certificate in College and University Teaching"
+  institution: "Center for Excellence in Teaching, Learning and Innovation (CETLI), University of Pennsylvania"
+  term: "Fall 2024"
