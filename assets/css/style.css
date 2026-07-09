@@ -68,7 +68,7 @@ body {
   z-index: 9999;
   border-radius: 4px;
   text-decoration: none;
-  font-size: 0.875rem;
+  font-size: 0.95rem;
 }
 
 /* --- Navigation ----------------------------------------- */
@@ -176,13 +176,13 @@ body {
 }
 
 .sidebar-role {
-  font-size: 0.875rem;
+  font-size: 0.95rem;
   color: var(--color-text-muted);
   margin-bottom: 0.15rem;
 }
 
 .sidebar-dept {
-  font-size: 0.875rem;
+  font-size: 0.95rem;
   color: var(--color-text-muted);
   line-height: 1.45;
   margin-bottom: 1.5rem;
@@ -199,7 +199,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.45rem;
-  font-size: 0.875rem;
+  font-size: 0.95rem;
   color: var(--color-accent);
   text-decoration: none;
 }
@@ -227,7 +227,7 @@ body {
   border: 1.5px solid var(--color-accent);
   text-decoration: none;
   border-radius: 4px;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 500;
 }
 
@@ -272,7 +272,7 @@ body {
 
 /* --- Bio ------------------------------------------------ */
 .bio p {
-  font-size: 0.95rem;
+  font-size: 1.02rem;
   margin-bottom: 0.85rem;
   color: var(--color-text);
 }
@@ -297,7 +297,7 @@ body {
 
 .paper {
   margin-bottom: 1rem;
-  font-size: 0.925rem;
+  font-size: 1rem;
   line-height: 1.55;
 }
 
@@ -325,19 +325,19 @@ body {
 
 .paper-coverage {
   color: var(--color-text-muted);
-  font-size: 0.875rem;
+  font-size: 0.95rem;
   margin-top: 0.2rem;
 }
 
 .paper-note {
   color: var(--color-text-muted);
-  font-size: 0.875rem;
+  font-size: 0.95rem;
   margin-top: 0.2rem;
 }
 
 /* --- Teaching ------------------------------------------- */
 .teaching-intro {
-  font-size: 0.95rem;
+  font-size: 1.02rem;
   margin-bottom: 1.75rem;
 }
 
@@ -360,7 +360,7 @@ body {
   align-items: baseline;
   gap: 1rem;
   margin-bottom: 0.45rem;
-  font-size: 0.925rem;
+  font-size: 1rem;
 }
 
 .teaching-course {
@@ -369,12 +369,12 @@ body {
 
 .teaching-instructor {
   color: var(--color-text-muted);
-  font-size: 0.875rem;
+  font-size: 0.95rem;
 }
 
 .teaching-term {
   color: var(--color-text-muted);
-  font-size: 0.875rem;
+  font-size: 0.95rem;
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -385,7 +385,7 @@ body {
   align-items: flex-start;
   gap: 1rem;
   margin-bottom: 0.65rem;
-  font-size: 0.925rem;
+  font-size: 1rem;
 }
 
 .teaching-lecture-left {
@@ -398,11 +398,11 @@ body {
 
 .teaching-lecture-meta {
   color: var(--color-text-muted);
-  font-size: 0.875rem;
+  font-size: 0.95rem;
 }
 
 .teaching-cert {
-  font-size: 0.925rem;
+  font-size: 1rem;
   color: var(--color-text-muted);
 }
 
@@ -413,7 +413,7 @@ body {
   align-items: flex-start;
   gap: 1rem;
   margin-bottom: 0.65rem;
-  font-size: 0.925rem;
+  font-size: 1rem;
 }
 
 .award-left {
@@ -427,14 +427,14 @@ body {
 
 .award-note {
   color: var(--color-text-muted);
-  font-size: 0.875rem;
+  font-size: 0.95rem;
   font-style: italic;
   margin-top: 0.15rem;
 }
 
 .award-year {
   color: var(--color-text-muted);
-  font-size: 0.875rem;
+  font-size: 0.95rem;
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -454,13 +454,13 @@ body {
 
 /* --- CV ------------------------------------------------- */
 .cv-text {
-  font-size: 0.95rem;
+  font-size: 1.02rem;
   color: var(--color-text);
 }
 
 /* --- Contact -------------------------------------------- */
 .contact-email {
-  font-size: 0.95rem;
+  font-size: 1.02rem;
 }
 
 .contact-email a {
@@ -493,7 +493,7 @@ body {
 }
 
 .single-content {
-  font-size: 0.95rem;
+  font-size: 1.02rem;
   line-height: 1.65;
 }
 
@@ -553,7 +553,7 @@ a:visited {
   .nav-links li a {
     display: block;
     padding: 0.75rem 1.5rem;
-    font-size: 0.95rem;
+    font-size: 1.02rem;
   }
 
   .page-wrapper {
