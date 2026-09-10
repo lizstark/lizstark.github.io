@@ -10,6 +10,9 @@ articles:
         url: "https://www.votebeat.org/pennsylvania/2026/06/03/mail-ballot-notice-cure-study-university-pennsylvania-study-2024-election/"
       - outlet: "Election Law Blog"
         url: "https://electionlawblog.org/?p=155397"
+    webinar:
+      - title: "Mail Ballots: Faster Verification, Better Processes, and Safer Tabulation"
+        url: "https://electioninnovation.org/video/mail-ballots-faster-verification-better-processes-and-safer-tabulation/"
 
   - title: "Democracy on the Front Pages: Evaluating Local Media Coverage of Election Officials"
     authors: "Stark, Liz"
