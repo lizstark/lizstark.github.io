@@ -451,6 +451,11 @@ body {
   display: block;
 }
 
+.hero-caption {
+  padding: 0 0.75rem;
+  text-align: right;
+}
+
 
 /* --- CV ------------------------------------------------- */
 .cv-text {
@@ -476,7 +481,7 @@ body {
 .photo-caption {
   font-size: 0.8rem;
   color: var(--color-muted);
-  margin-top: 3rem;
+  margin-top: 0.5rem;
 }
 
 /* --- Single / List pages -------------------------------- */
