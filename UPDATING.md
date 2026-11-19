@@ -27,7 +27,9 @@ Edit `data/teaching.yaml`. Add to the `ta` list for TA courses, `lectures` for g
 
 ## Update your CV
 
-Replace `static/files/cv.pdf` with the new version. Keep the filename exactly as `cv.pdf`.
+Replace `static/files/Stark_CV.pdf` with the new version. Keep the filename exactly as `Stark_CV.pdf` (this is the file the site links to).
+
+Also copy the same PDF over `static/files/cv.pdf`. That is the old address, kept so that older links to the CV still show the current version.
 
 ## Change your photo
 

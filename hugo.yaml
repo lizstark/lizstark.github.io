@@ -1,6 +1,7 @@
 baseURL: "https://lizstark.github.io/"
 title: "Liz Stark"
 languageCode: en-us
+disablePathToLower: true  # keeps capital letters in links (e.g., /files/Stark_CV.pdf)
 
 params:
   description: "Ph.D. Candidate, Department of Political Science, University of Pennsylvania"
@@ -13,7 +14,7 @@ params:
   orcid: "https://orcid.org/0009-0004-2306-4960"
   linkedin: "https://www.linkedin.com/in/starktalk"
   twitter: "https://x.com/stark_talk"
-  cv: "/files/cv.pdf"
+  cv: "/files/Stark_CV.pdf"
 
 menu:
   main:
@@ -27,7 +28,7 @@ menu:
       url: "/#teaching"
       weight: 20
     - name: CV
-      url: "/files/cv.pdf"
+      url: "/files/Stark_CV.pdf"
       weight: 30
     - name: Contact
       url: "/#contact"
